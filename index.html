@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Swiper demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- Demo styles -->
+    <style>
+        html,
+        body {
+            position: relative;
+            height: 100%;
+        }
+
+        body {
+            background: #eee;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        }
+
+        .swiper {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-slide {
+            padding: 20px;
+            font-size: 18px;
+            background: #fff;
+
+            flex-direction: column;
+        }
+
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+
+        }
+
+        .swiper {
+            width: 100%;
+            height: 500px;
+            margin: 20px auto;
+        }
+
+        .append-buttons {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .append-buttons button {
+            display: inline-block;
+            cursor: pointer;
+            border: 1px solid #007aff;
+            color: #007aff;
+            text-decoration: none;
+            padding: 4px 10px;
+            border-radius: 4px;
+            margin: 0 10px;
+            font-size: 13px;
+        }
+
+        .contanier {
+            max-width: 1220px;
+            margin: 0 auto;
+        }
+
+        .h1 {
+            font-size: 70px;
+            margin-bottom: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="contanier">
+        <h1 class="h1">Project and <br> practise</h1>
+
+        <div #swiperRef="" class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <h2>01</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, minus ipsa. Iusto iste aliquam
+                        veritatis vero corporis ad quisquam aspernatur voluptatibus aliquid similique, voluptates
+                        officia voluptatem necessitatibus odio accusantium sunt?</p>
+                    <img src="https://imageio.forbes.com/specials-images/imageserve/6064b148afc9b47d022718d1/Hennessey-Venom-F5/960x0.jpg?height=473&width=711&fit=bounds"
+                        alt="msla">
+                </div>
+
+                <div class="swiper-slide">
+                    <h2>02</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, minus ipsa. Iusto iste aliquam
+                        veritatis vero corporis ad quisquam aspernatur voluptatibus aliquid similique, voluptates
+                        officia voluptatem necessitatibus odio accusantium sunt?</p>
+                    <img src="https://imageio.forbes.com/specials-images/imageserve/6064b148afc9b47d022718d1/Hennessey-Venom-F5/960x0.jpg?height=473&width=711&fit=bounds"
+                        alt="msla">
+                </div>
+
+                <div class="swiper-slide">
+                    <h2>03</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, minus ipsa. Iusto iste aliquam
+                        veritatis vero corporis ad quisquam aspernatur voluptatibus aliquid similique, voluptates
+                        officia voluptatem necessitatibus odio accusantium sunt?</p>
+                    <img src="https://imageio.forbes.com/specials-images/imageserve/6064b148afc9b47d022718d1/Hennessey-Venom-F5/960x0.jpg?height=473&width=711&fit=bounds"
+                        alt="msla">
+                </div>
+
+                <div class="swiper-slide">
+                    <h2>04</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, minus ipsa. Iusto iste aliquam
+                        veritatis vero corporis ad quisquam aspernatur voluptatibus aliquid similique, voluptates
+                        officia voluptatem necessitatibus odio accusantium sunt?</p>
+                    <img src="https://imageio.forbes.com/specials-images/imageserve/6064b148afc9b47d022718d1/Hennessey-Venom-F5/960x0.jpg?height=473&width=711&fit=bounds"
+                        alt="msla">
+                </div>
+
+
+                <div class="swiper-slide">
+                    <h2>05</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, minus ipsa. Iusto iste aliquam
+                        veritatis vero corporis ad quisquam aspernatur voluptatibus aliquid similique, voluptates
+                        officia voluptatem necessitatibus odio accusantium sunt?</p>
+                    <img src="https://imageio.forbes.com/specials-images/imageserve/6064b148afc9b47d022718d1/Hennessey-Venom-F5/960x0.jpg?height=473&width=711&fit=bounds"
+                        alt="msla">
+                </div>
+
+
+                <div class="swiper-slide">
+                    <h2>06</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, minus ipsa. Iusto iste aliquam
+                        veritatis vero corporis ad quisquam aspernatur voluptatibus aliquid similique, voluptates
+                        officia voluptatem necessitatibus odio accusantium sunt?</p>
+                    <img src="https://imageio.forbes.com/specials-images/imageserve/6064b148afc9b47d022718d1/Hennessey-Venom-F5/960x0.jpg?height=473&width=711&fit=bounds"
+                        alt="msla">
+                </div>
+
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+
+    </div>
+
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 3,
+            centeredSlides: true,
+            spaceBetween: 30,
+            pagination: {
+                el: ".swiper-pagination",
+                type: "fraction",
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+
+        var appendNumber = 4;
+        var prependNumber = 1;
+        document
+            .querySelector(".prepend-2-slides")
+            .addEventListener("click", function (e) {
+                e.preventDefault();
+                swiper.prependSlide([
+                    '<div class="swiper-slide">Slide ' + --prependNumber + "</div>",
+                    '<div class="swiper-slide">Slide ' + --prependNumber + "</div>",
+                ]);
+            });
+        document
+            .querySelector(".prepend-slide")
+            .addEventListener("click", function (e) {
+                e.preventDefault();
+                swiper.prependSlide(
+                    '<div class="swiper-slide">Slide ' + --prependNumber + "</div>"
+                );
+            });
+        document
+            .querySelector(".append-slide")
+            .addEventListener("click", function (e) {
+                e.preventDefault();
+                swiper.appendSlide(
+                    '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>"
+                );
+            });
+        document
+            .querySelector(".append-2-slides")
+            .addEventListener("click", function (e) {
+                e.preventDefault();
+                swiper.appendSlide([
+                    '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>",
+                    '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>",
+                ]);
+            });
+    </script>
+</body>
+
+</html>
